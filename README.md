@@ -3,6 +3,7 @@
 **Description** If you have docker installed on your host use this command
 
 ```
+cd medods
 docker compose up --build
 ```
 
@@ -12,6 +13,7 @@ mongodb:
 and then run 
 
 ```
+cd medods
 go run cmd/main.go
 ```
 
