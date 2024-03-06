@@ -1,0 +1,8 @@
+time="2024-03-06T14:23:31+06:00" level=error msg="unable hash bcrypt: password length exceeds 72 bytes" func="github.com/MamushevArup/jwt-auth/internal/service/token.(*Gen).hashToken()" file="generate-token.go:95"
+time="2024-03-06T14:33:31+06:00" level=error msg="unable hash bcrypt: password length exceeds 72 bytes" func="github.com/MamushevArup/jwt-auth/internal/service/token.(*Gen).hashToken()" file="generate-token.go:97"
+time="2024-03-06T16:17:21+06:00" level=error msg="no document found mongo: no documents in result" func="github.com/MamushevArup/jwt-auth/internal/repository/mongo/auth.(*auth).UniqueUser()" file="mongo.go:62"
+time="2024-03-06T21:41:32+06:00" level=error msg="no document found mongo: no documents in result" func="github.com/MamushevArup/jwt-auth/internal/repository/mongo/auth.(*auth).UniqueUser()" file="mongo.go:82"
+time="2024-03-06T21:41:45+06:00" level=error msg="no document found mongo: no documents in result" func="github.com/MamushevArup/jwt-auth/internal/repository/mongo/auth.(*auth).UniqueUser()" file="mongo.go:82"
+time="2024-03-06T21:42:00+06:00" level=error msg="check failed due to crypto/bcrypt: hashedPassword is not the hash of the given password" func="github.com/MamushevArup/jwt-auth/internal/service/token.(*Gen).UpdateToken()" file="token.go:47"
+time="2024-03-06T21:42:06+06:00" level=error msg="check failed due to crypto/bcrypt: hashedPassword is not the hash of the given password" func="github.com/MamushevArup/jwt-auth/internal/service/token.(*Gen).UpdateToken()" file="token.go:47"
+time="2024-03-06T21:43:31+06:00" level=error msg="no document found mongo: no documents in result" func="github.com/MamushevArup/jwt-auth/internal/repository/mongo/auth.(*auth).UniqueUser()" file="mongo.go:82"

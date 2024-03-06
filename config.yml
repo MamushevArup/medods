@@ -1,0 +1,7 @@
+mongodb:
+  port: 27017
+  host: localhost
+  database: auth
+  collection: user
+server:
+  port: 1010
