@@ -1,3 +1,20 @@
+## How to start
+
+**Description** If you have docker installed on your host use this command
+
+```
+docker compose up --build
+```
+
+**Desctiption** If you want to run it without docker you must have mongodb on your host installed and change field in config.yml
+mongodb:
+  host: localhost
+and then run 
+
+```
+go run cmd/main.go
+```
+
 ## Routes
 
 ### Generate Token
