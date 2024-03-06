@@ -1,6 +1,6 @@
 mongodb:
   port: 27017
-  host: localhost
+  host: mongodb
   database: auth
   collection: user
 server:

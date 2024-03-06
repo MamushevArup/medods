@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  medods:
+    image: medods
+    container_name: medods
+    build:
+      context: .
+    ports:
+      - "1010:1010"
+    networks:
+      - custom
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    command: ["--noauth"]
+    ports:
+      - "27017:27017"
+    networks:
+      - custom
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.stats().ok"]
+      interval: 10s
+      retries: 3
+    volumes:
+      - med_data:/mongodb_data:/data/db
+
+networks:
+  custom:
+
+volumes:
+  med_data:
